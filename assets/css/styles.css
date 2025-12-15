@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #d4c5f9 0%, #a8d5ff 100%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 1000px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: none;
+}
+
+#cityInput {
+  width: 100%;
+  max-width: 400px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 1rem;
+  padding-left: 10px;
+  border: none;
+}
+
+#cityInput:focus {
+  outline: 2px solid rgba(114, 123, 199, 0.87);
+}
+
+#searchButton {
+  width: 100%;
+  max-width: 60px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: white;
+  font-size: 1.5rem;
+  background-color: rgba(114, 123, 199, 0.87);
+  border: none;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: rgba(100, 109, 185, 0.87);
+  transition: background-color 0.3s ease;
+}
+
+.main-weather {
+  width: 100%;
+  max-width: 1000px;
+  height: 330px;
+  margin-top: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.city-name {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+.todays-date {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+
+.icon-temp {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  font-size: 4rem;
+  margin: 10px 0;
+}
+
+.temperature {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.weather-condition {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+
+.weather-recommendation {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+
+.weather-details-box {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.weather-details {
+  position: relative;
+  width: calc(50% - 10px);
+  height: 140px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #333;
+}
+
+.weather-details:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.weather-details p {
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.weather-details div {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.weather-details h3 {
+  font-size: 2.3rem;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.forecast {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.forecast-container {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.forecast-box {
+  width: calc(20% - 10px);
+  height: 170px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.forecast-box:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+.forecast-box h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+}
+
+.forecast-box div {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.forecast-box h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.forecast-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .weather-details {
+    width: 100%;
+  }
+
+  .forecast-container {
+    flex-wrap: wrap;
+  }
+
+  .forecast-box {
+    width: calc(50% - 7.5px);
+  }
+}
