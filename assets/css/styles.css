@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilex:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +16,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(212, 197, 249, 0.8) 0%,
+    rgba(168, 213, 255, 0.5) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  color: #4a3f7a;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-box {
@@ -31,6 +55,7 @@ body {
   gap: 20px;
   padding: 20px;
   border: none;
+  margin-top: 50px;
 }
 
 #cityInput {
@@ -184,6 +209,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  margin-bottom: 50px;
 }
 
 .forecast-box {
@@ -226,6 +252,44 @@ body {
   font-size: 1rem;
   font-weight: 400;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: auto;
+  background: linear-gradient(
+    180deg,
+    rgba(168, 213, 255, 0.5) 0%,
+    rgba(212, 197, 249, 0.8) 100%
+  );
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: rgba(114, 123, 199, 0.87);
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
