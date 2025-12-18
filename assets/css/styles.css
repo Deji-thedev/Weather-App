@@ -293,15 +293,104 @@ footer p {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .search-box {
+    margin-top: 30px;
+    height: auto;
+    padding: 15px;
+  }
+
+  #cityInput {
+    max-width: 250px;
+  }
+
+  .main-weather {
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .city-name {
+    font-size: 2rem;
+  }
+
+  .weather-icon {
+    font-size: 3rem;
+  }
+
+  .temperature {
+    font-size: 3rem;
+  }
+
+  .weather-details-box {
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .weather-details {
     width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .forecast {
+    font-size: 1.5rem;
   }
 
   .forecast-container {
     flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px;
   }
 
   .forecast-box {
-    width: calc(50% - 7.5px);
+    width: calc(50% - 5px);
+    height: 150px;
+  }
+
+  .forecast-box h6 {
+    font-size: 0.9rem;
+  }
+
+  .forecast-box div {
+    font-size: 2rem;
+  }
+
+  .forecast-box h5 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .city-name {
+    font-size: 1.5rem;
+  }
+
+  #cityInput {
+    max-width: 200px;
+    font-size: 0.9rem;
+  }
+
+  #searchButton {
+    max-width: 50px;
+    height: 45px;
+  }
+
+  .weather-details h3 {
+    font-size: 2rem;
+  }
+
+  .social-links a {
+    font-size: 1.3rem;
   }
 }
